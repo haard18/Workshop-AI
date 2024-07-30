@@ -1,15 +1,17 @@
-// src/App.js
-// import React from 'react';
-import ProblemList from './Problemlist';
+import ProblemList from './components/Problemlist';
 import './App.css';
-
+import { Route, Routes, BrowserRouter} from 'react-router-dom';
+import Story from './components/Story';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-gray-100 flex items-center justify-center">
-      <ProblemList />
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProblemList />} />
+        <Route path='/story' element={<Story/>}/>
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

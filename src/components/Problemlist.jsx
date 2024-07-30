@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProblemStatement from './problemstatement';
-import problems from './assets/problems.json'; // Assuming you save the JSON data as problems.json
+import problems from '../assets/problems.json'; // Assuming you save the JSON data as problems.json
 
 const ProblemList = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
@@ -11,6 +13,10 @@ const ProblemList = () => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex < problems["Problem Statements"].length - 1 ? prevIndex + 1 : prevIndex));
+  };
+
+  const handleRedirect = () => {
+    navigate('/story');
   };
 
   return (
@@ -24,13 +30,21 @@ const ProblemList = () => {
         >
           Previous
         </button>
-        <button
-          className="bg-green-500 text-black px-4 py-2 rounded"
-          onClick={handleNext}
-          disabled={currentIndex === problems["Problem Statements"].length - 1}
-        >
-          Next
-        </button>
+        {currentIndex < problems["Problem Statements"].length - 1 ? (
+          <button
+            className="bg-green-500 text-black px-4 py-2 rounded"
+            onClick={handleNext}
+          >
+            Next
+          </button>
+        ) : (
+          <button
+            className="bg-green-500 text-black px-4 py-2 rounded"
+            onClick={handleRedirect}
+          >
+            Go to Story
+          </button>
+        )}
       </div>
     </div>
   );
