@@ -7,9 +7,9 @@ const markdown = `
 # Submission Format
 ## Problemno-instaid1|instaid2|instaid3
 # Photo Submission
-[Photo Submission](https://tinyurl.com/yps4yz3r)
+# https://tinyurl.com/yps4yz3r
 # Story Submission
-[Story Submission](https://tinyurl.com/4p7r5s77)
+# https://tinyurl.com/4p7r5s77
 ## Login Credentials
 ### PC=> user=student, password=itmb@123
 ## WIFI Credentials
