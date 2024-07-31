@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const Story = () => {
   const keywords = [
     "Adventure", "Mystery", "Castle", "Dragon", "Forest",
@@ -7,7 +9,7 @@ const Story = () => {
   ];
 
   const examplePrompt = `A brave **hero** embarks on a daring **quest** through an enchanted **forest** to uncover a hidden **treasure** guarded by a fearsome **dragon**. Along the way, they encounter an **ancient** **wizard** who reveals a **secret** **prophecy** about the fate of the **kingdom**. The hero must face the **cursed** **villain** in an epic **battle** to save the realm and fulfill the **legend**.`;
-
+const navigate=useNavigate();
   // Function to render the example prompt with bold keywords
   const renderExamplePrompt = (prompt) => {
     const parts = prompt.split(/(\*\*.*?\*\*)/).map((part, index) => {
@@ -34,6 +36,8 @@ const Story = () => {
       <div>
         <h2 className="text-2xl font-semibold mb-2">Example Prompt</h2>
         <p className="text-xl">{renderExamplePrompt(examplePrompt)}</p>
+        <button className='mx-4 mt-4 bg-green-500 text-black px-4 py-2 rounded' onClick={()=>{navigate('/submission')}}>GO TO SUBMISSIONS</button>
+
       </div>
     </div>
   );

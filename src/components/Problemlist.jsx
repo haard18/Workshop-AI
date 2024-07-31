@@ -38,12 +38,15 @@ const ProblemList = () => {
             Next
           </button>
         ) : (
-          <button
-            className="bg-green-500 text-black px-4 py-2 rounded"
-            onClick={handleRedirect}
-          >
-            Go to Story
-          </button>
+          <>
+            <button
+              className="bg-green-500 text-black px-4 py-2 rounded"
+              onClick={handleRedirect}
+            >
+              Go to Story
+            </button>
+            <button className='mx-4 bg-green-500 text-black px-4 py-2 rounded' onClick={()=>{navigate('/submission')}}>GO TO SUBMISSIONS</button>
+          </>
         )}
       </div>
     </div>
