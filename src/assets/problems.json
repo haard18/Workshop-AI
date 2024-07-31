@@ -1,32 +1,26 @@
 {
     "Problem Statements": [
+      
       {
         "ProblemNo": 1,
-        "Organization Name": "GreenEarth Initiatives",
-        "Domain": "Environmental Conservation",
-        "Theme and Essence of Logo": "Emphasize sustainability, nature, and earth-friendly practices. The logo should evoke a sense of harmony with nature.",
-        "Extra Details": "Incorporate elements like trees, leaves, and the planet Earth. Use shades of green and blue to reflect nature and the environment."
+        "Organization Name": "WellPet",
+        "Domain": "Pet Care and Wellness",
+        "Theme and Essence of Logo": "Highlight pet health, care, and happiness.",
+        "Extra Details": "Incorporate elements like a paw print, heart, or pet silhouettes. Use friendly colors like orange, blue, and pink."
       },
       {
         "ProblemNo": 2,
-        "Organization Name": "TechInnovators Inc.",
-        "Domain": "Technology and Innovation",
-        "Theme and Essence of Logo": "Highlight cutting-edge technology and forward-thinking innovation. The logo should look modern and sleek.",
-        "Extra Details": "Include elements like circuits, gears, or abstract tech designs. Use colors like blue, silver, and black to give a high-tech feel."
-      },
-      {
-        "ProblemNo": 3,
-        "Organization Name": "HealthFirst Medical",
-        "Domain": "Healthcare and Wellness",
-        "Theme and Essence of Logo": "Convey health, trust, and care. The logo should feel professional and comforting.",
-        "Extra Details": "Incorporate symbols like a stethoscope, heart, or cross. Use calming colors like blue, green, and white."
-      },
-      {
-        "ProblemNo": 4,
         "Organization Name": "Adventure Quest",
         "Domain": "Travel and Adventure",
         "Theme and Essence of Logo": "Evoke excitement, exploration, and adventure. The logo should be dynamic and vibrant.",
         "Extra Details": "Include elements like mountains, a compass, or a backpack. Use bold and adventurous colors like orange, red, and green."
+      },
+      {
+        "ProblemNo": 3,
+        "Organization Name": "Artisan Creations",
+        "Domain": "Handmade Crafts and Art",
+        "Theme and Essence of Logo": "Reflect creativity, craftsmanship, and uniqueness.",
+        "Extra Details": "Include elements like paintbrushes, pottery, or handcrafted items. Use artistic colors like purple, gold, and teal."
       }
     ]
   }
