@@ -4,6 +4,10 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
 const markdown = `
+# Rules and Regulations
+## 1. Log Into Google Account
+## 2. ideogram.ai
+## 3. you will get only 10 prompts for free on IdeoGram AI so Use carefully
 # Submission Format
 ## Problemno-instaid1|instaid2|instaid3
 # Photo Submission
