@@ -6,7 +6,7 @@ import SubmissionInfo from './components/Submission';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<ProblemList />} />
         <Route path='/story' element={<Story />} />
